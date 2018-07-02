@@ -1,0 +1,20 @@
+<div class="container bg-grey">
+  <div *ngFor="let rep of repo" class="repoItem">
+    <a href="{{rep.html_url}}"><h1>{{ rep.name }}</h1></a>
+    <p>{{ rep.description }}</p>
+    <i *ngIf="rep.fork" class="fas fa-code-branch"></i>
+    <i *ngIf="!rep.fork" class="fas fa-book"></i>
+    <!--<app-repo-forks></app-repo-forks>-->
+
+    <span>Language: <b>{{ rep.language }}</b></span>
+    <div class="row">
+      <div class="column">
+        <p>Last update: {{rep.updated_at | date : short}}</p>
+      </div>
+      <div class="column">
+
+        <p>Created: {{rep.created_at | date}}</p>
+      </div>
+    </div>
+  </div>
+</div>

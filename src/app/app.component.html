@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="wrapper">
+  <!--<h1>
+    Welcome to {{ title }}!
+  </h1>-->
+  <div class="bg-red">
+    <div class="container align-center">
+      <h3 class="text-white">GitHub API</h3>
+      <p class="text-white">Enter a valid GitHub username</p>
+      <div class="inputContainer">
+        <input #Username type="text" name="" placeholder="GitHub username">
+        <input (click)="getUsername(Username.value); updateUrl(Username.value)" type="submit">
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey appContent bg-blue text-white">
+    <div class="container">
+      <app-git-repos [parentData]="message" [updateUrl]="newUrl"></app-git-repos>
+    </div>
+  </div>
+
+  <app-repo-list></app-repo-list>
+</div>

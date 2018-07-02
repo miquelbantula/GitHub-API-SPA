@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "fonts";
+
+body{font-family: 'Open Sans'};
+html,body{margin:0;}
+
+
+input[type="text"]{height: 50px; width: calc(100% - 100px); max-width: 480px; text-indent:12px; margin:auto; border: none; border-radius: 40px; z-index: 1;}
+input[type="submit"]{height: 53px; width: 100%; max-width: 100px; border: none; border-radius: 40px; background: #333333; color: white; margin-left: -100px; z-index: 0;}
+
+#wrapper{}
+.container{padding: 40px 4%;}
+.inputContainer{text-align:center; position: relative; top: 64px;}
+.appContent{padding-top: 60px;}
+
+.bg-green{background: #25A18E;}
+.bg-grey{background: #f8f8f8;}
+.bg-dark{background: #15151D;}
+.bg-red{background: #f35a5f;}
+.bg-blue{background: #34495e;}
+
+.text-white{color: #fff;}
